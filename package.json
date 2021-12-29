@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Sample swaggerui + openapi + webpack + refs project",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "build": "npm run combine && webpack",
+    "start": "npm run combine && webpack-dev-server --open",
+    "combine": "npx openapi-combine merge -i src/swagger-config.yaml -o ./output/swagger-config-merged.yaml"
   },
   "author": "mandarini",
   "license": "Apache-2.0",

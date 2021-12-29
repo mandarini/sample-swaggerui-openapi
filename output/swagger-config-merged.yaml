@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Sample project
+  description: My sample API
+servers:
+  - url: http://localhost:8080
+paths:
+  /demo:
+    get:
+      summary: Just a demo path
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+  /clients:
+    get:
+      description: List clients
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+    post:
+      summary: Create client
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+  /users:
+    get:
+      description: List users
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+    post:
+      summary: Create user
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
