@@ -1,0 +1,20 @@
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: "Sample project"
+  description: "My sample API"
+servers:
+  - url: "http://localhost:8080"
+paths:
+  /demo:
+    get:
+      summary: "Just a demo path"
+      responses:
+        401:
+          description: "Unauthorized"
+        200:
+          description: "OK"
+  /clients:
+    $ref: "clients.yaml#/paths/~1clients/get"
+  /users:
+    $ref: "users.yaml#/paths/~1users/get"
