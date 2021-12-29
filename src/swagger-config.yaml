@@ -18,3 +18,9 @@ paths:
     $ref: "files/clients.yaml#/paths/~1clients"
   /users:
     $ref: "files/users.yaml#/paths/~1users"
+components:
+  schemas:
+    Client:
+      $ref: "files/clients.yaml#/components/schemas/Client"
+    User:
+      $ref: "files/users.yaml#/components/schemas/User"

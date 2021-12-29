@@ -5,7 +5,8 @@
   "scripts": {
     "build": "npm run combine && webpack",
     "start": "npm run combine && webpack-dev-server --open",
-    "combine": "npx openapi-combine merge -i src/swagger-config.yaml -o ./output/swagger-config-merged.yaml"
+    "combine": "npx openapi-combine merge -i src/swagger-config.yaml -o ./output/swagger-config-merged.yaml",
+    "export": "npm run combine && npx openapi-typescript output/swagger-config-merged.yaml --output exported.ts"
   },
   "author": "mandarini",
   "license": "Apache-2.0",
