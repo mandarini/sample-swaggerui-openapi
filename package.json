@@ -6,7 +6,7 @@
     "build": "npm run combine && webpack",
     "start": "npm run combine && webpack-dev-server --open",
     "combine": "npx openapi-combine merge -i src/swagger-config.yaml -o ./output/swagger-config-merged.yaml",
-    "export": "npx openapi-typescript src/swagger-config.yaml --output exported.ts"
+    "export": "npx @openapitools/openapi-generator-cli generate -i src/swagger-config.yaml -g typescript-angular -o exported/"
   },
   "author": "mandarini",
   "license": "Apache-2.0",
