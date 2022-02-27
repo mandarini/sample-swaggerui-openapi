@@ -45,4 +45,12 @@ module.exports = {
     filename: "[name].bundle.js",
     path: outputPath,
   },
+  devServer: {
+    static: [
+      {
+        directory: path.join(__dirname, 'src'),
+        publicPath: '/spec'
+      }
+    ]
+  }
 };

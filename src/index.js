@@ -1,14 +1,8 @@
 import SwaggerUI from "swagger-ui";
 import "swagger-ui/dist/swagger-ui.css";
 
-const spec = require("./swagger-config.yaml");
-
 const ui = SwaggerUI({
-  spec,
-  urls: [
-    { url: "./clients.yaml", name: "Clients" },
-    { url: "./users.yaml", name: "Users" },
-  ],
+  url: "http://localhost:8081/spec/swagger-config.yaml",
   deepLinking: true,
   dom_id: "#swagger",
 });
