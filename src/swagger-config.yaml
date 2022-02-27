@@ -15,6 +15,6 @@ paths:
         200:
           description: "OK"
   /clients:
-    $ref: "clients.yaml#/paths/~1clients/get"
+    $ref: "clients.yaml#/paths/~1clients"
   /users:
-    $ref: "users.yaml#/paths/~1users/get"
+    $ref: "users.yaml#/paths/~1users"
